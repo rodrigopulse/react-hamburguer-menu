@@ -1,0 +1,50 @@
+.container-menu {
+  width: auto;
+  display: flex;
+  align-content: center;
+}
+.hamburguer {
+  display: inline-block;
+  cursor: pointer;
+  background: none;
+  border: 0;
+  z-index: 3;
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  &:focus {
+    outline: none;
+  }
+  &--open {
+    .bar1 {
+      -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+      transform: rotate(-45deg) translate(-9px, 6px);
+    }
+    .bar2 {
+      opacity: 0;
+      }
+    .bar3 {
+      -webkit-transform: rotate(45deg) translate(-8px, -8px);
+      transform: rotate(45deg) translate(-8px, -8px);
+    }
+  }
+}
+.menu {
+  width: 100%;
+  max-width: 350px;
+  height: 100vh;
+  display: block;
+  position: fixed;
+  background: #ccc;
+  top: 0;
+  left: -350px;
+  z-index: 2;
+  transition: all .2s ease-out;
+  &--open {
+    left: 0;
+  }
+}
