@@ -1,3 +1,3 @@
 # react-hamburguer-menu
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/react-hamburguer-menu)
+Menu hamburguer simples feito em React para ínicio em projetos
